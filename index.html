@@ -17,22 +17,60 @@
             margin: 0;
             color: #fff;
             flex-direction: column;
-            padding-top: 20px; /* Bu satırı ekledim, resimle üst kısım arasında boşluk bırakmak için */
+            padding-top: 20px;
         }
         .container {
             text-align: center;
             width: 100%;
         }
         .header-img {
-            width: 300px; /* İstediğiniz boyuta göre ayarlayabilirsiniz */
+            width: 300px; 
             height: auto;
             margin-bottom: 20px;
         }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            box-shadow: 0 4px #999;
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            background-color: #3e8e41;
+            box-shadow: 0 6px #666;
+            transform: translateY(-2px);
+        }
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 2px #666;
+            transform: translateY(2px);
+        }
+        .button1 {background-color: #4CAF50;} /* Green */
+        .button2 {background-color: #7289DA;} /* Discord Rengi */
+        .button3 {background-color: #FF0000;} /* YouTube Rengi */
     </style>
 </head>
 <body>
     <div class="container">
         <img src="https://i.ibb.co/f8J7qn7/ASPAXFFY-11-29-2024.png" alt="ASPA" class="header-img">
+        <div class="buttons">
+            <a href="https://t.me/aspaniz" class="button button1">Telegram</a>
+            <a href="https://discord.com/users/994575564960694292" class="button button2">Discord</a>
+            <a href="https://www.youtube.com/@Aspaniz" class="button button3">YouTube</a>
+        </div>
     </div>
 </body>
 </html>
